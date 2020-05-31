@@ -1,0 +1,46 @@
+::-webkit-scrollbar {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.app {
+  margin: 0;
+  &>.container {
+    text-align: center;
+    margin-top: 5rem;
+    min-height: calc(85vh - 1rem);
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    &>.columns {
+      margin-top: 5rem;
+      &> .column {
+
+        h1 {
+          font-size: 2.2rem;
+          margin-bottom: 1rem;
+        }
+        textarea {
+          min-height: 300px;
+          min-width: 100%;
+        }
+        &:nth-child(2) > p {
+          background: rgba(0,0,0,0.05);
+          padding: 1.2rem;
+        }
+      }
+    }
+  }
+  .app-footer {
+    height: 1rem;
+    &>p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
