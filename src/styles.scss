@@ -29,7 +29,8 @@
           min-height: 300px;
           min-width: 100%;
         }
-        &:nth-child(2) > p {
+        &:nth-child(2) > p,
+        &:nth-child(3) > p, {
           background: rgba(0,0,0,0.05);
           padding: 1.2rem;
         }

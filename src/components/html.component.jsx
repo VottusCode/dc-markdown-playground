@@ -2,11 +2,11 @@ import React from "react"
 
 function Html(props) {
     return (
-        <pre>
+        <p>
             <code>
                 {props.text}
             </code>
-        </pre>
+        </p>
     );
 }
 
