@@ -2,7 +2,9 @@ import React from "react";
 
 function Textarea(props) {
     return (
-        <textarea className="textarea" onChange={props.handleChange}/>
+        <div>
+            <textarea className="textarea" onChange={props.handleChange}/>
+        </div>
     )
 }
 

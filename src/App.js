@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import "../node_modules/bulma/bulma.sass";
-import "./styles.scss";
+import "./assets/scss/styles.scss";
 import {toHTML} from 'discord-markdown';
 import Html from "./components/html.component";
 import Formatted from "./components/formatted.component";
 import Textarea from "./components/textarea.component";
+import './assets/js/spoiler'
 
 class App extends Component {
   constructor(props) {
@@ -47,6 +48,7 @@ class App extends Component {
 
           <div className="app-footer">
             <p>Hosted by Vottus. <a href="https://github.com/VottusCode/dc-markdown-playground">Source Code</a></p>
+            <p>Disclaimer: Additional CSS may be required for some formatting.</p>
           </div>
         </div>
     );

@@ -38,10 +38,37 @@
     }
   }
   .app-footer {
+    margin-top: 2rem;
     height: 1rem;
     &>p {
       margin: 0;
       text-align: center;
+    }
+  }
+}
+
+blockquote:before {
+  content: "| ";
+  font-weight: bold;
+  color: gray;
+}
+span.d-spoiler {
+  cursor: pointer;
+  background-color: #202225;
+  color: #202225;
+  padding: 0.8px;
+  border-radius: 3px;
+  &:hover {
+    background:rgb(59, 61, 65);
+    color: #3b3d41 !important;
+  }
+  &.active {
+    cursor: inherit;
+    color: white;
+    background: rgba(59, 61, 65, 0.6);
+    &:hover {
+      color: white !important;
+      background: rgba(59, 61, 65, 0.6) !important;
     }
   }
 }
