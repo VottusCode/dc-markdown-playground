@@ -3865,12 +3865,12 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
-discord-markdown@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/discord-markdown/-/discord-markdown-2.3.1.tgz#d3edf9870c1c333eab86cd3a5cfca734fae83cca"
-  integrity sha512-hGMhsJnIzBUJ/BXSGwKOTYbgPAJv5huMgrXHzRe4Inxp7D4Wo/iBeoHrfjgtyxf36THffHV6ksTBrnYZg8CD9A==
+discord-markdown@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/discord-markdown/-/discord-markdown-2.4.1.tgz#a9c31f7a20999cced4342cfcd45409300658dcc2"
+  integrity sha512-YYGfms0rjGsjS2IxskG0IJqZC/fIhx2ayhLNshqU4gkPX/XhL0fQZR+E/jQpU+/tOyWIu6d1fESVzxaIGVYFzQ==
   dependencies:
-    highlight.js "^9.18.1"
+    highlight.js "^10.1.2"
     simple-markdown "^0.7.2"
 
 dns-equal@^1.0.0:
@@ -5267,10 +5267,10 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-highlight.js@^9.18.1:
-  version "9.18.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.1.tgz#ed21aa001fe6252bb10a3d76d47573c6539fe13c"
-  integrity sha512-OrVKYz70LHsnCgmbXctv/bfuvntIKDz177h0Co37DQ5jamGZLVmoCVMtjMtNZY3X9DrCcKfklHPNeA0uPZhSJg==
+highlight.js@^10.1.2:
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.2.1.tgz#09784fe2e95612abbefd510948945d4fe6fa9668"
+  integrity sha512-A+sckVPIb9zQTUydC9lpRX1qRFO/N0OKEh0NwIr65ckvWA/oMY8v9P3+kGRK3w2ULSh9E8v5MszXafodQ6039g==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -6478,11 +6478,6 @@ jest@24.9.0:
   dependencies:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
-
-jquery-slim@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/jquery-slim/-/jquery-slim-3.0.0.tgz#87ab2fa10501798e93124a4b5eb953c85379707e"
-  integrity sha1-h6svoQUBeY6TEkpLXrlTyFN5cH4=
 
 js-base64@^2.1.8:
   version "2.5.2"
@@ -10925,6 +10920,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
+  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
 
 undefsafe@^2.0.2:
   version "2.0.3"
