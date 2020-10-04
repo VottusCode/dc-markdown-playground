@@ -1,7 +1,8 @@
 {
   "name": "dc-markdown",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "dependencies": {
     "@primer/css": "^14.4.0",
     "@testing-library/jest-dom": "^4.2.4",

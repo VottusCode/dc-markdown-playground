@@ -11,7 +11,10 @@ type FormattedProps = {
 }
 
 const Formatted: React.FC<FormattedProps> = (props) => (
-  <p dangerouslySetInnerHTML={{ __html: props.text }}></p>
+  <code
+    className="result"
+    dangerouslySetInnerHTML={{ __html: props.text }}
+  ></code>
 )
 
 export default Formatted
