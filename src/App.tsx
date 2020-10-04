@@ -33,56 +33,64 @@ const App: React.FC = () => {
   return (
     <div className="app">
       <div className="container">
-        <h1>Discord Markdown Playground</h1>
-        <h2>
-          <a href="https://github.com/brussell98/discord-markdown">
-            discord-markdown
-          </a>{" "}
-          by <a href="https://github.com/brussell98">brussell98</a>
-        </h2>
-
-        <div className="columns">
-          <div className="column">
-            <h1>The text</h1>
-            <Textarea handleChange={setTextValue} />
+        <div className="page-content">
+          <div className="content has-text-centered mt-4 mb-4">
+            <h1>Discord Markdown Playground</h1>
+            <h5>
+              <a href="https://github.com/brussell98/discord-markdown">
+                discord-markdown
+              </a>{" "}
+              by <a href="https://github.com/brussell98">brussell98</a>
+            </h5>
           </div>
 
-          <div className="column">
-            <h1>Result</h1>
-            <Formatted text={text} />
+          <div className="columns demo">
+            <div className="column is-one-third">
+              <h5 className="is-size-5">Markdown</h5>
+              <Textarea handleChange={setTextValue} />
+            </div>
+
+            <div className="column is-one-third">
+              <h5 className="is-size-5">Result</h5>
+              <div className="c-content">
+                <Formatted text={text} />
+              </div>
+            </div>
+
+            <div className="column is-one-third">
+              <h5 className="is-size-5">HTML</h5>
+              <div className="c-content">
+                <Html text={text} />
+              </div>
+            </div>
           </div>
 
-          <div className="column">
-            <h1>The HTML</h1>
-            <Html text={text} />
-          </div>
+          {spoilers && (
+            <div className="has-text-centered">
+              Disclaimer: discord-markdown does not implement the Spoiler
+              functionality, you have to implement it yourself.
+              <br />
+              For a React example, see{" "}
+              <a href="https://github.com/VottusCode/dc-markdown-playground/blob/master/src/App.tsx">
+                App.tsx on VottusCode/dc-markdown-playground
+              </a>
+            </div>
+          )}
         </div>
-
-        {spoilers && (
-          <div>
-            Disclaimer: discord-markdown does not implement the Spoiler
-            functionality, you have to implement it yourself.
-            <br />
-            For a React example, see{" "}
-            <a href="https://github.com/VottusCode/dc-markdown-playground/blob/master/src/App.tsx">
-              App.tsx on VottusCode/dc-markdown-playground
-            </a>
-          </div>
-        )}
       </div>
 
-      <div className="app-footer">
+      <footer className="footer has-text-centered">
         <p>
-          Hosted by Vottus.{" "}
+          2020 &copy; Vottus &ndash; Licensed under MIT &ndash;{" "}
           <a href="https://github.com/VottusCode/dc-markdown-playground">
-            Source Code
+            GitHub
           </a>
         </p>
         <p>
           Disclaimer: Additional CSS / JS may be required for some formatting
           and functionality
         </p>
-      </div>
+      </footer>
     </div>
   )
 }
